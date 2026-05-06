@@ -1,5 +1,5 @@
 {
-  "name": "@novaxmd/baileys",
+  "name": "bmbtech-baileys",
   "version": "1.0.2",
   "description": "WhatsApp Multi-Device Library (Baileys Fork)",
   "keywords": [
@@ -10,10 +10,10 @@
     "multi-device",
     "automation"
   ],
-  "homepage": "https://github.com/novaxmd/baileys",
+  "homepage": "https://github.com/novaxmd/bmbtech-baileys",
   "repository": {
     "type": "git",
-    "url": "https://github.com/novaxmd/baileys.git"
+    "url": "https://github.com/novaxmd/bmbtech-baileys.git"
   },
   "license": "MIT",
   "author": "novaxmd",
