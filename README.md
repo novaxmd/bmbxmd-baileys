@@ -1,13 +1,13 @@
-# <div align='center'>Bmb WhatsApp Web baileys</div>
+# <div align='center'>BMB-Tech Baileys</div>
 
 <div align='center'>
 
-![WhatsApp API](https://i.ibb.co/XZ6mzgtQ/IMG-20260129-WA0014.jpg)
+![BMB-XMD Baileys](https://raw.githubusercontent.com/novaxmd/bmbxmd-baileys/main/assets/banner.jpg)
 
 </div>
 
-**Baileys** is a WebSockets-based TypeScript library for interacting with the WhatsApp Web API.  
-This is **not the official Baileys library**, but a **modified and extended version** developed independently to add functionalities that many developers have requested. These enhancements aim to improve flexibility, offer better developer experience, and provide tools that are missing from the original version.
+**BMB-XMD Baileys** is a WebSockets-based TypeScript library for interacting with the WhatsApp Web API.  
+This is **not the official Baileys library**, but a **modified and extended version** maintained by [novaxmd](https://github.com/novaxmd), built on top of the original Baileys project, to add functionalities that many developers have requested. These enhancements aim to improve flexibility, offer better developer experience, and provide tools that are missing from the original version.
 
 # Disclaimer  
 This project is **not affiliated with, endorsed by, or officially connected to WhatsApp Inc., Meta Platforms, Inc., or any of their subsidiaries**. The official WhatsApp website can be found at [whatsapp.com](https://whatsapp.com). "WhatsApp," along with related names, marks, and logos, are registered trademarks and the intellectual property of their respective owners.
@@ -30,17 +30,17 @@ Here is an example you can use: [example.ts](Example/example.ts) or here is a tu
 
 Use the stable version:
 ```bash
-npm install @BmbTech-Baileys
+npm install bmbxmd-baileys
 ```
 
 Use the edge version (no guarantee of stability, but latest fixes + features)
 ```bash
-yarn add Bmbtech-Baileys@latest
+yarn add bmbxmd-baileys@latest
 ```
 
 Then import your code using:
 ```javascript
-const { default: makeWASocket } = require("@Bmbtech-Baileys")
+const { default: makeWASocket } = require("bmbxmd-baileys")
 ```
 # Links
 
@@ -48,7 +48,7 @@ const { default: makeWASocket } = require("@Bmbtech-Baileys")
 - [Docs](https://guide.whiskeysockets.io/)
 
 #### Baileys Pro
-- [WhatsApp](https://whatsapp.com/channel/0029VawO6hgF6sn7k3SuVU3z)
+- [WhatsApp](https://whatsapp.com/channel/0029Vaj4X9iAInPuhzUk3v1L)
 
 # Index
 
@@ -198,7 +198,7 @@ WhatsApp provides a multi-device API that allows Baileys to be authenticated as 
 > You can customize browser name if you connect with **QR-CODE**, with `Browser` constant, we have some browsers config, **see [here](https://baileys.whiskeysockets.io/types/BrowsersMap.html)**
 
 ```javascript
-const { default: makeWASocket } = require("Bmbtech-Baileys")
+const { default: makeWASocket } = require("bmbxmd-baileys")
 
 
 const sock = makeWASocket({
@@ -219,7 +219,7 @@ If the connection is successful, you will see a QR code printed on your terminal
 The phone number can't have `+` or `()` or `-`, only numbers, you must provide country code
 
 ```javascript
-const { default: makeWASocket } = require("Bmbtech-Baileys")
+const { default: makeWASocket } = require("bmbxmd-baileys")
 
 const sock = makeWASocket({
     // can provide additional config here
@@ -320,8 +320,8 @@ You obviously don't want to keep scanning the QR code every time you want to con
 
 So, you can load the credentials to log back in:
 ```javascript
-const makeWASocket = require("Bmbtech-Baileys").default;
-const { useMultiFileAuthState } = require("Bmbtech-Baileys");
+const makeWASocket = require("bmbxmd-baileys").default;
+const { useMultiFileAuthState } = require("bmbxmd-baileys");
 
 // enable authDebug to display session logs
 const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys', { authDebug: true })
@@ -336,8 +336,8 @@ sock.ev.on('creds.update', saveCreds)
 
 You can sync cache on MultiFileAuthState
 ```javascript
-const makeWASocket = require("Bmbtech-Baileys").default;
-const { useMultiFileAuthState, makeCacheableSignalKeyStore } = require("Bmbtech-Baileys");
+const makeWASocket = require("bmbxmd-baileys").default;
+const { useMultiFileAuthState, makeCacheableSignalKeyStore } = require("bmbxmd-baileys");
 
 // enable syncCache then fetch cache
 const { state, saveCreds, cache: authCache } = await useMultiFileAuthState('auth_info_baileys', { syncCache: true })
@@ -386,8 +386,8 @@ sock.ev.on('messages.upsert', ({ messages }) => {
 > This example includes basic auth storage too
 
 ```javascript
-const makeWASocket = require("Bmbtech-Baileys").default;
-const { DisconnectReason, useMultiFileAuthState } = require("Bmbtech-Baileys");
+const makeWASocket = require("bmbxmd-baileys").default;
+const { DisconnectReason, useMultiFileAuthState } = require("bmbxmd-baileys");
 const Boom = require('@hapi/boom');
 
 async function connectToWhatsApp () {
@@ -469,8 +469,8 @@ sock.ev.on('messages.update', event => {
 It can be used as follows:
 
 ```javascript
-const makeWASocket = require("Bmbtech-Baileys").default;
-const { makeInMemoryStore } = require("Bmbtech-Baileys");
+const makeWASocket = require("bmbxmd-baileys").default;
+const { makeInMemoryStore } = require("bmbxmd-baileys");
 // the store maintains the data of the WA connection in memory
 // can be written out to a file & read from it
 const store = makeInMemoryStore({ })
@@ -1231,7 +1231,7 @@ await sock.sendMessage(jid, {
 If you want to save the media you received
 ```javascript
 const { createWriteStream } = require('fs');
-const { downloadMediaMessage, getContentType } = require("Bmbtech-Baileys");
+const { downloadMediaMessage, getContentType } = require("bmbxmd-baileys");
 
 sock.ev.on('messages.upsert', async ({ [m] }) => {
     if (!m.message) return // if there is no text or media message
