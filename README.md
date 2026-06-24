@@ -9,6 +9,16 @@
 **BMB-XMD Baileys** is a WebSockets-based TypeScript library for interacting with the WhatsApp Web API.  
 This is **not the official Baileys library**, but a **modified and extended version** maintained by [novaxmd](https://github.com/novaxmd), built on top of the original Baileys project, to add functionalities that many developers have requested. These enhancements aim to improve flexibility, offer better developer experience, and provide tools that are missing from the original version.
 
+<a href="https://bmbtech.zone.id">
+  <img 
+    title="Bmb-Web" 
+    src="https://img.shields.io/badge/Bmb--Web-Click%20to%20View-brightgreen?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABvUlEQVR4Ae2XjWrCQBBF3wQjqzPIpAZOAjtAezM9nLJKnAFHgqfAXsA2GAgFCGGO7c+ZShDk9Qkq2aXxvPYhfl72EkCAJAvKUlT6f3XivCrCyBlFPLMCRAwAIgz4Fy+LC7v0wm7a7kSaQ7vt2cAzPfDKOEjA4x2g7qdoAzYxrkBqCQDxiLbcRz/3uwD8KXJEG8sbBmkQX2gyZyeDLMPQpvlbVwDp6A9/jRLc1CtkbtYBau2bfbHDy6F4C3GYrYAj7AoP3T5wG2MXCwP+YDBb0RwB8wo6TiZtnTu9GoOuYA0v0RAPvo0MTmKHcTS6cXfW2dCfpURhODafUTrAFlXVmETuSU3rjW8rCu0jGQdXEd1f+rf8COJo3dn96G4Cn0Z7jAH4k40Re2zcnksq2qZT64slAH9ki4RQl/HrpJDJ5DQAO1SCBh5hldMAAAAASUVORK5CYII=&logoColor=white"
+    width="300" 
+    height="40.45"
+    alt="Bmb Tech Web"
+  />
+</a>
+
 # Disclaimer  
 This project is **not affiliated with, endorsed by, or officially connected to WhatsApp Inc., Meta Platforms, Inc., or any of their subsidiaries**. The official WhatsApp website can be found at [whatsapp.com](https://whatsapp.com). "WhatsApp," along with related names, marks, and logos, are registered trademarks and the intellectual property of their respective owners.
 
