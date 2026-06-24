@@ -2,7 +2,7 @@
 
 <div align='center'>
 
-![BMB-XMD Baileys](https://raw.githubusercontent.com/novaxmd/bmbxmd-baileys/main/assets/banner.jpg)
+![BMB-XMD Baileys](https://url.bmbxmd.workers.dev/L000JU.jpg)
 
 </div>
 
